@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <Image
           src={"/assets/images/mountain.jpg"}
           alt=""
