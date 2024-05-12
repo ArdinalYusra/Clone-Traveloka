@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import Input from "../ui/Input";
 
 type Props = {
@@ -7,20 +7,18 @@ type Props = {
 
 export default function Calendar_Component(props: Props) {
   const { icon } = props;
+  const [value, setValue] = useState(new Date().toISOString().split("T")[0]);
 
-  const [value, setValue] = useState(new Date());
-  const [date, setDate] = useState('');
-
-  useEffect(() => {
-    const today = new Date();
-    const formattedDate = today.toISOString().slice(0, 10);
-    setDate(formattedDate);
-  }, []);
-
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setValue(e.target.value);
+  };
   return (
     <div className="flex w-full">
       {icon && <div className="m-2 text-slate-600">{icon}</div>}
-      <Input type="date" value={date} />
+      <form onSubmit={handleSubmit}>
+        <Input type="date" value={value} className="text-black" />
+      </form>
     </div>
   );
 }

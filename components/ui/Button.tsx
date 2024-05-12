@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 type Props = {
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const Button = (props: Props) => {

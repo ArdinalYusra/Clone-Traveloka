@@ -1,3 +1,13 @@
+import { CategoryProps } from "@/types"
+import { FaBus, FaCarAlt, FaGetPocket, FaHotel } from "react-icons/fa"
+import { FaChildCombatant, FaTrainSubway, FaTruckPlane } from "react-icons/fa6"
+import { IoMdAirplane } from "react-icons/io"
+import { MdCarRental, MdOutlineSignalWifiStatusbarConnectedNoInternet4, MdPayments, MdWallet } from "react-icons/md"
+import { PiFlowerLotusDuotone } from "react-icons/pi"
+import { TbHorseToy, TbShip } from "react-icons/tb"
+import { GiDeskLamp } from "react-icons/gi"
+import { TiFlowChildren, TiTicket } from "react-icons/ti"
+
 export const Navlinks = [
     {
         label: "Bantuan",
@@ -13,58 +23,107 @@ export const Navlinks = [
     },
 ]
 
-export const CategoryList = [
+export const CategoryList: CategoryProps[] = [
     {
         label: "Hotel",
         path: "/hotel",
+        icon: FaHotel,
     },
     {
         label: "Tiket Pesawat",
         path: "/tiket-pesawat",
+        icon: IoMdAirplane,
     },
     {
         label: "Tiket Kereta Api",
          path: "/kereta-api",
+         icon: FaTrainSubway,
     },
     {
         label: "Tiket Bus & Travel",
          path: "/bus-and-shuttle",
+         icon: FaBus,
     },
     {
         label: "Antar Jemput Bandara",
          path: "/airport-transfer",
+         icon: FaCarAlt,
     },
 
     {
         label: "Rental Mobil",
          path: "/car-rental",
+         icon: MdCarRental,
     },
     {
         label: "Aktraksi dan Aktivitas",
          path: "/activities",
+         icon: FaGetPocket,
     },
     {
         label: "Pesawat + Hotel",
          path: "/packages",
+         icon: FaTruckPlane,
+    },
+    {
+        label: "Internet Luar Negeri",
+        path: "/international-data",
+        icon: MdOutlineSignalWifiStatusbarConnectedNoInternet4,
     },
     {
         label: "Asuransi Perjalanan", path: "/insurance",
     },
     {
-        label: "Internet Luar Negeri",
-         path: "/international-data",
+        label: "Paduan Wisata",
+        path: "/destinations",
     },
     {
         label: "PayLater",
          path: "/paylater",
-    },
-    {
-        label: "Paduan Wisata",
-         path: "/destinations",
+         icon: MdPayments,
     },
     {
         label: "Gift Voucher",
          path: "/giftvoucher",
+         icon: MdWallet,
+    },
+]
+
+export const  Activities: CategoryProps[] = [
+    {
+        label: "Spa & Kecantikan",
+        path : "/",
+        icon: PiFlowerLotusDuotone,
+    },
+    {
+        label: "Taman Bermain",
+        path : "/",
+        icon: TbHorseToy,
+    },
+    {
+        label: "Kursus & Workshop",
+        path : "/",
+        icon: GiDeskLamp,
+    },
+    {
+        label: "Events",
+        path : "/",
+        icon: TiTicket,
+    },
+    {
+        label: "Atraksi",
+        path : "/",
+        icon: TiFlowChildren,
+    },
+    {
+        label: "Tur",
+        path : "/",
+        icon: FaChildCombatant,
+    },
+    {
+        label: "Cruises",
+        path : "/",
+        icon: TbShip,
     },
 ]
 
