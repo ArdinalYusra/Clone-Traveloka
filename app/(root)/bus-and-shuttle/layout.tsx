@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Traveloka - Southeast Asia's Leading Travel Platform",
+  title: "Pesan Tiket Bus dan Travel Online di Traveloka",
   description: "This app was created by Ardinal Yusra",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -14,9 +10,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return <div>{children}</div>;
 }

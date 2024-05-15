@@ -6,6 +6,14 @@ import Header from "@/components/shared/Header";
 import Header_Purchase from "@/components/shared/Header_Purchase";
 import { usePathname } from "next/navigation";
 
+const disableHeader = [
+  "/packages",
+  "/international-data",
+  "/insurance",
+  "/insurance",
+  "/giftvoucher",
+];
+
 const disableHeaderPurchase = [
   "/",
   "/international-data",
@@ -24,7 +32,7 @@ export default function RootLayout({
 
   return (
     <div className="min-h-screen w-full bg-white">
-      <Header />
+      {!disableHeader.includes(pathname) && <Header />}
       <div
         className={`${pathname === "/" || pathname === "/international-data" || pathname === "/destinations" || pathname === "/giftvoucher" ? "my-0" : "my-24"}`}
       >

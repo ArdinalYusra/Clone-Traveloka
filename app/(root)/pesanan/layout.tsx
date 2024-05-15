@@ -1,12 +1,9 @@
+import Header from "@/components/shared/Header";
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Traveloka - Southeast Asia's Leading Travel Platform",
+  title: "Cek Pesanan",
   description: "This app was created by Ardinal Yusra",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -15,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div>
+      <div>{children}</div>
+    </div>
   );
 }
