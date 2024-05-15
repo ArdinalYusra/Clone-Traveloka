@@ -48,19 +48,19 @@ const Tiket_Pesawat_Dashboard_Purchase = () => {
             </button>
           ))}
         </div>
-        <div className="flex gap-10">
+        <div className="flex gap-10 text-white">
           <Purchase_Input label="Jumlah Penumpang">
             <Select_Component
               defaultValue={Usia[0]}
               options={Usia}
-              icon={<HiUsers />}
+              icon={<HiUsers className="text-white" />}
             />
           </Purchase_Input>
           <Purchase_Input label="Kelas Penerbangan">
             <Select_Component
               defaultValue={Kelas_Penerbangan[0]}
               options={Kelas_Penerbangan}
-              icon={<MdAirlineSeatLegroomExtra />}
+              icon={<MdAirlineSeatLegroomExtra className="text-white" />}
             />
           </Purchase_Input>
         </div>

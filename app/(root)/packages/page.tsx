@@ -179,7 +179,7 @@ const page = () => {
         </div>
         <div className="space-y-5 my-10">
           <h1 className="font-bold text-center text-2xl text-slate-800">
-            Destinasi Bus Populer
+            Destinasi Populer
           </h1>
           <div className="grid grid-cols-3 grid-rows-3 gap-5 px-20">
             {Tujuan_Populer_Pesawat_Hotel.map((item, index) => (

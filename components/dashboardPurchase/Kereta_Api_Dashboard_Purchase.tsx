@@ -39,32 +39,30 @@ const Kereta_Api_Dashboard_Purchase = () => {
         ))}
       </div>
       <div className="flex gap-3">
-        <Purchase_Input label="Asal">
+        <Purchase_Input label="Asal" flex1>
           <TbTrain className="px-3 rounded-md" />
           <Select_Component defaultValue={Kota[0]} options={Kota} />
         </Purchase_Input>
-        <Purchase_Input label="Tujuan">
+        <Purchase_Input label="Tujuan" flex1>
           <TbTrain className="px-3 rounded-md scale-x-[-1]" />
           <Select_Component defaultValue={Kota[2]} options={Kota} />
         </Purchase_Input>
-        <Purchase_Input label="Tanggal Berangkat">
+        <Purchase_Input label="Tanggal Berangkat" flex1>
           <FaRegCalendarAlt className="px-3 rounded-md" />
           <Calendar_Component />
         </Purchase_Input>
-        <Purchase_Input label="Tanggal Pulang">
+        <Purchase_Input label="Tanggal Pulang" flex1>
           <FaRegCalendarAlt className="px-3 rounded-md" />
           <Calendar_Component />
         </Purchase_Input>
-        <Purchase_Input label="Dewasa">
+        <Purchase_Input label="Dewasa" flex1>
           <FaChildReaching className="px-3 rounded-md" />
           <Select_Component
             defaultValue={Amount_People[0]}
             options={Amount_People}
           />
         </Purchase_Input>
-        <div className="flex items-end">
-          <Button className="max-w-10 h-[43px] rounded-xl" />
-        </div>
+        flex1
       </div>
     </div>
   );

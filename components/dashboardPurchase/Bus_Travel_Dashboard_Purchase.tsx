@@ -41,23 +41,23 @@ const Bus_Travel_Dashboard_Purchase = () => {
         ))}
       </div>
       <div className="flex gap-3">
-        <Purchase_Input label="Dari">
+        <Purchase_Input label="Dari" flex1>
           <TbBus className="text-xl px-3 scale-x-[-1]" />
           <Select_Component defaultValue={Kota[0]} options={Kota} />
         </Purchase_Input>
-        <Purchase_Input label="Ke">
+        <Purchase_Input label="Ke" flex1>
           <TbBus className="text-xl px-3" />
           <Select_Component defaultValue={Kota[0]} options={Kota} />
         </Purchase_Input>
-        <Purchase_Input label="Tanggal Pergi">
+        <Purchase_Input label="Tanggal Pergi" flex1>
           <FaRegCalendarAlt className="px-3" />
           <Calendar_Component />
         </Purchase_Input>
-        <Purchase_Input label="Pulang Pergi">
+        <Purchase_Input label="Pulang Pergi" flex1>
           <FaRegCalendarAlt className="px-3" />
           <Calendar_Component />
         </Purchase_Input>
-        <Purchase_Input label="Jumlah Kursi">
+        <Purchase_Input label="Jumlah Kursi" flex1>
           <BiChild className="text-4xl px-3" />
           <Select_Component
             defaultValue={Amount_People[0]}

@@ -11,22 +11,22 @@ import Button from "../ui/Button";
 const Airport_Transfer_Dashboard_Purchase = () => {
   return (
     <div className="flex gap-3 my-10 text-white">
-      <Purchase_Input label="Dari Bandara">
+      <Purchase_Input label="Dari Bandara" flex1>
         <FaPlaneDeparture className="px-3" />
         <Select_Component
           defaultValue={Bandara_List[0]}
           options={Bandara_List}
         />
       </Purchase_Input>
-      <Purchase_Input label="Ke area, alamat, gedung">
+      <Purchase_Input label="Ke area, alamat, gedung" flex1>
         <FaLocationDot className="px-3" />
         <Select_Component defaultValue={Alamat_List[0]} options={Alamat_List} />
       </Purchase_Input>
-      <Purchase_Input label="Tanggal Jemput">
+      <Purchase_Input label="Tanggal Jemput" flex1>
         <FaRegCalendarAlt className="px-3 rounded-md" />
         <Calendar_Component />
       </Purchase_Input>
-      <Purchase_Input label="Jam Jemput">
+      <Purchase_Input label="Jam Jemput" flex1>
         <FaRegClock className="px-3" />
         <Input type="number" placeholder="00-00" className="text-black" />
       </Purchase_Input>

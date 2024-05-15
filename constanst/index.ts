@@ -19,7 +19,7 @@ export const Navlinks = [
     },
     {
         label: "Pesanan",
-        path: "/"
+        path: "/pesanan"
     },
 ]
 
@@ -76,11 +76,6 @@ export const CategoryList: CategoryProps[] = [
     {
         label: "Paduan Wisata",
         path: "/destinations",
-    },
-    {
-        label: "PayLater",
-         path: "/paylater",
-         icon: MdPayments,
     },
     {
         label: "Gift Voucher",
@@ -737,4 +732,23 @@ export const Jenis_Perlindungan = [
 export const Wilayah = [
     {value: "Domestik"},
     {value: "Indonesia"}
+]
+
+export const ATRAKSI = [
+    {
+        image: "/assets/images/atraksi-1.webp",
+        label: "Tur dan Atraksi",
+    },
+    {
+        image: "/assets/images/atraksi-2.webp",
+        label: "Fun Activities",
+    },
+    {
+        image: "/assets/images/atraksi-3.webp",
+        label: "Travel Insurance",
+    },
+    {
+        image: "/assets/images/atraksi-4.webp",
+        label: "Traveloka PayLater",
+    },
 ]

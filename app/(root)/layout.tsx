@@ -23,14 +23,18 @@ export default function RootLayout({
   const pathname = usePathname();
 
   return (
-      <div className="min-h-screen w-full bg-white">
-        <Header />
-        <div className={`${pathname === "/" || pathname === "/international-data" || pathname === "/destinations" || pathname === "/giftvoucher" ? "my-0" : "my-24"}`}>
+    <div className="min-h-screen w-full bg-white">
+      <Header />
+      <div
+        className={`${pathname === "/" || pathname === "/international-data" || pathname === "/destinations" || pathname === "/giftvoucher" ? "my-0" : "my-24"}`}
+      >
         {!disableHeaderPurchase.includes(pathname) && <Header_Purchase />}
-        </div>
-        {children}
-        {!disableFooterCategory.includes(pathname) && <Footer_Category />}
-        <Footer />
       </div>
+      {children}
+      <div>
+        {!disableFooterCategory.includes(pathname) && <Footer_Category />}
+      </div>
+      <Footer />
+    </div>
   );
 }
