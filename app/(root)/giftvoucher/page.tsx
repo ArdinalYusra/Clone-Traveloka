@@ -13,7 +13,7 @@ const page = () => {
           width={300}
           className="w-full h-[350px] object-cover"
         />
-        <div className="absolute top-0 z-50 h-[350px] w-full bg-gradient-to-r from-red-500 via-red-500 to-red-500/30">
+        <div className="absolute top-0 z-40 h-[350px] w-full bg-gradient-to-r from-red-500 via-red-500 to-red-500/30">
           <div className="space-y-5 px-[250px] py-16 text-slate-50">
             <h1 className="font-semibold text-3xl">Traveloka Gift Voucher</h1>
             <p className="font-semibold text-sm w-[500px]">

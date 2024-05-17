@@ -35,7 +35,7 @@ const Header = () => {
           <Link href={"/"} className="text-3xl">
             <Image
               src={
-                isScrolled
+                isScrolled || pathname !== "/"
                   ? "/assets/images/logo-traveloka-black.png"
                   : "/assets/images/logo-traveloka-white.png"
               }
