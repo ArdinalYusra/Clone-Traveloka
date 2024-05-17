@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Booking Hotel Murah Harga Promo! Pesan Online Sekarang di traveloka",
   description: "This app was created by Ardinal Yusra",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

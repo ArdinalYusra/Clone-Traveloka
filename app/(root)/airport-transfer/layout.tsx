@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pesan Antar Jemput Bandara di Traveloka",
   description: "This app was created by Ardinal Yusra",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
